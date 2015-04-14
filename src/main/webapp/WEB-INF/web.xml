@@ -1,0 +1,25 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+	<context-param>
+		<description>Location to store uploaded file</description>
+		<param-name>file-upload</param-name>
+		<param-value>
+			\home\
+		</param-value>
+	</context-param>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>FileUpload</servlet-name>
+		<display-name>FileUpload</display-name>
+		<description></description>
+		<servlet-class>FileUpload</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileUpload</servlet-name>
+		<url-pattern>/FileUpload</url-pattern>
+	</servlet-mapping>
+</web-app>
